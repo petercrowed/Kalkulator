@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title>Sample "Hello, World" Application</title>
+      <script src="app.js"></script>
+  </head>
+
+  <body bgcolor=white>
+
+    <table border="0" cellpadding="10">
+      <tr>
+
+        <td>
+          <h1>Kalkulator</h1>
+        </td>
+      </tr>
+    </table>
+
+
+    <ul>
+      <p style="white-space: pre;">
+                                            Praca: 1                                Praca: 2                           Praca: 3
+</p>
+      Dochod z pracy: <input type="text" id="pracadochod1" value="0"> <input type="text" id="pracadochod2" value="0"> <input type="text" id="pracadochod3" value="0">
+
+    </ul>
+    <ul>
+        Pobrany podatek: <input type="text" id="pobranypodatek1" value=""> <input type="text" id="pobranypodatek2" value=""> <input type="text" id="pobranypodatek3" value="">
+      </ul>
+      <p style="white-space: pre;">
+                                                      <button type="button" onclick="licz()">Licz</button>                                       <button type="button" onclick="licz()">Licz</button>                                <button type="button" onclick="licz()">Licz</button>
+
+</p>
+
+<div class="box1">
+<p style="white-space: pre;">
+  Dodatkowy Dochod:
+  <input type="text" id="dodatkowyDochod" value="0">
+</p>
+</div>
+
+<div class="box2">
+<p style="white-space: pre;">
+           Liczba dzieci:<div class="value-change">
+       <input type="text" id="out" value="0" size="3" />
+       <button type="button" id="dec"
+       onclick="dec('out');">-</button>
+      <button type="button" id="inc"
+    onclick="inc('out');">+</button>
+
+
+   </div>
+ </div>
+
+</p>
+
+                                         Koszty:
+</p>
+Remontowe: <input type="text" id="remontowe" name="fname" value="0"><br>
+Zdrowotne: <input type="text" id="zdrowotne" name="fname" value="0"><br>
+Rodzinne: <input type="text" id="rodzinne" name="fname" value="0"><br>
+Naukowe: <input type="text" id="naukowe" name="fname" value="0"><br>
+
+    <p style="white-space: pre;">
+<button onclick="oblicz()">Oblicz Wszystko:</button>
+
+<p id="oblicz"></p>
+    </p>
+  </body>
+</html>
